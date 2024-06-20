@@ -1,0 +1,12 @@
+[package]
+name = "minimal-candle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+candle-core = { git = "https://github.com/huggingface/candle.git", version = "0.6.0", features=["metal"] }
+candle-nn = { git = "https://github.com/huggingface/candle.git", version = "0.6.0", features=["metal"] }
+candle-transformers = { git = "https://github.com/huggingface/candle.git", version = "0.6.0", features=["metal"] }
+hf-hub = "0.3"
+tokenizers = "0.19"
